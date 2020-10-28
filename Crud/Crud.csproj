@@ -58,6 +58,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAdd.Designer.cs">
+      <DependentUpon>UserControlAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlView.Designer.cs">
+      <DependentUpon>UserControlView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,6 +83,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlAdd.resx">
+      <DependentUpon>UserControlAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlView.resx">
+      <DependentUpon>UserControlView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,6 +116,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Visualize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nothing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

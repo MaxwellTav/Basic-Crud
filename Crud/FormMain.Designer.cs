@@ -31,22 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.FormElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.buttonExitElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.buttonMaxElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.buttonMinElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.toolTipView = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipAdd = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipExit = new System.Windows.Forms.ToolTip(this.components);
@@ -54,13 +52,13 @@
             this.toolTipMin = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipDelete = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipUpdate = new System.Windows.Forms.ToolTip(this.components);
+            this.userControlAdd1 = new Crud.UserControlAdd();
+            this.userControlView1 = new Crud.UserControlView();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +82,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1138, 36);
             this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(-1, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 25);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Simple CRUD";
             // 
             // button3
             // 
@@ -134,6 +142,16 @@
             this.panel3.Size = new System.Drawing.Size(1138, 10);
             this.panel3.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(-3, -3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 15);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Desing By: Maxwell Tavares";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Firebrick;
@@ -166,8 +184,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
-            this.panel5.Controls.Add(this.bunifuImageButton4);
-            this.panel5.Controls.Add(this.bunifuImageButton3);
             this.panel5.Controls.Add(this.bunifuImageButton2);
             this.panel5.Controls.Add(this.bunifuImageButton1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
@@ -175,22 +191,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(81, 554);
             this.panel5.TabIndex = 1;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.bunifuImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bunifuImageButton1.Image = global::Crud.Properties.Resources.Visualize;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(0, 24);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(81, 71);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 4;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            this.bunifuImageButton1.MouseEnter += new System.EventHandler(this.bunifuImageButton1_MouseEnter);
             // 
             // bunifuImageButton2
             // 
@@ -207,53 +207,21 @@
             this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             this.bunifuImageButton2.MouseEnter += new System.EventHandler(this.bunifuImageButton2_MouseEnter);
             // 
-            // bunifuImageButton3
+            // bunifuImageButton1
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.bunifuImageButton3.Image = global::Crud.Properties.Resources.Delete;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(0, 178);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(81, 71);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 6;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.MouseEnter += new System.EventHandler(this.bunifuImageButton3_MouseEnter);
-            // 
-            // bunifuImageButton4
-            // 
-            this.bunifuImageButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.bunifuImageButton4.Image = global::Crud.Properties.Resources.Update;
-            this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(0, 255);
-            this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(81, 71);
-            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton4.TabIndex = 7;
-            this.bunifuImageButton4.TabStop = false;
-            this.bunifuImageButton4.Zoom = 10;
-            this.bunifuImageButton4.MouseEnter += new System.EventHandler(this.bunifuImageButton4_MouseEnter);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-1, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Simple CRUD";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-3, -3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 15);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Desing By: Maxwell Tavares";
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.bunifuImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bunifuImageButton1.Image = global::Crud.Properties.Resources.Visualize;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(0, 24);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(81, 71);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 4;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.bunifuImageButton1.MouseEnter += new System.EventHandler(this.bunifuImageButton1_MouseEnter);
             // 
             // toolTipView
             // 
@@ -290,6 +258,23 @@
             this.toolTipUpdate.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipUpdate.ToolTipTitle = "Aqui podras actualizar docs.";
             // 
+            // userControlAdd1
+            // 
+            this.userControlAdd1.BackColor = System.Drawing.SystemColors.Control;
+            this.userControlAdd1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlAdd1.Location = new System.Drawing.Point(0, 0);
+            this.userControlAdd1.Name = "userControlAdd1";
+            this.userControlAdd1.Size = new System.Drawing.Size(1150, 600);
+            this.userControlAdd1.TabIndex = 5;
+            // 
+            // userControlView1
+            // 
+            this.userControlView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlView1.Location = new System.Drawing.Point(0, 0);
+            this.userControlView1.Name = "userControlView1";
+            this.userControlView1.Size = new System.Drawing.Size(1150, 600);
+            this.userControlView1.TabIndex = 4;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,19 +285,20 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.userControlAdd1);
+            this.Controls.Add(this.userControlView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -333,8 +319,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.ToolTip toolTipView;
@@ -344,6 +328,8 @@
         private System.Windows.Forms.ToolTip toolTipMin;
         private System.Windows.Forms.ToolTip toolTipDelete;
         private System.Windows.Forms.ToolTip toolTipUpdate;
+        private UserControlView userControlView1;
+        private UserControlAdd userControlAdd1;
     }
 }
 

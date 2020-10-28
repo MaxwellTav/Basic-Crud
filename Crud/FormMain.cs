@@ -40,7 +40,9 @@ namespace Crud
         //mostrar el form de visualizar
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-
+            userControlView1.BringToFront();
+            userControlView1.Visible = true;
+            userControlAdd1.Visible = false;
         }
 
         //Al pasar el mouse por encima
@@ -52,7 +54,9 @@ namespace Crud
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-
+            userControlAdd1.BringToFront();
+            userControlAdd1.Visible = true;
+            userControlView1.Visible = false;
         }
 
         private void bunifuImageButton2_MouseEnter(object sender, EventArgs e)
@@ -77,15 +81,13 @@ namespace Crud
         {
             toolTipMin.SetToolTip(button3, "Click para minimizar ventana");
         }
+        
 
-        private void bunifuImageButton3_MouseEnter(object sender, EventArgs e)
+        private void FormMain_Load(object sender, EventArgs e)
         {
-            toolTipDelete.SetToolTip(bunifuImageButton3, "Click para borrar docs.");
-        }
-
-        private void bunifuImageButton4_MouseEnter(object sender, EventArgs e)
-        {
-            toolTipUpdate.SetToolTip(bunifuImageButton4, "Click para actualizar docs.");
+            userControlView1.BringToFront();
+            userControlView1.Visible = true;
+            userControlAdd1.Visible = false;
         }
     }
 }

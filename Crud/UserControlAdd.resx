@@ -117,26 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Create" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Create.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Visualize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Visualize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Visualize(white)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Visualize(white).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="No" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\No.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Update" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nothing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nothing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALXSURBVDhPDcxpO+J7AIDh//eYc2bGvmSN7GtJu1RIJKGS
+        iCRKEm2ShCY7Y5u5ztd8zu/F/faW/tS7+VPn4qvOyVftAp81dj6r5/issvHx0yKYef9h4v27gfd/dbz9
+        o+Htm5rf31RIr81eXpvWeGlc4aVhmef6JWGR5zoHT7V2nmpmeay28Vg1LZh5+Gnk4Yee++9apIfWAPct
+        fu5lPu6aPdw1rQhubhuXuG1YpFLvoFJn51ftrGDjV42FcrWZcpUJ6aZjh+v2INdtm1y1bnDV4hO8lGSr
+        lJrdXDa5uGx0UmxYEOYp1s9xUTfDRa0VqdAVoSAPcy4Pcd65Tb5ji3x7gHybn7NWn+Ah17JKTrZMrtlF
+        tmmRbKODTKMdKdNzSEYRJa3YJ929R6orREq+Q6pzi9OOgODnpN3HSZuHk9ZVki1ukjIXxzInUmIgSaI/
+        wVFfnKPeGPGeAyFCXBHmsDvEYdc2MfkWsc4NwU+0w0u0fY2DthWkg+EM+0Mp4YTI4DGRgSMi/Yfs9UXZ
+        690n3LtHuGeXXcU2u91BdrsChOR+wYcUGjtnZ/SMnZEs28NptodOhSTBwQTBgThb/TG2+g7YFMlmb5jN
+        nh0CiiCB7k2kDVWJDWURv7KAfzzP+liO9dEM6yMpfMMnwjHeoSO8gzG8A1E8/RE8fWHW+kJIq5oKq5Nl
+        VtTXrEyUcKsuhAJu5RnL41mWx9K4Rk9xjSSFBEvDcZaGYjgHD5Cc+gecujsWtRUWNWUWJq+FEgvqIo6J
+        Ag5VnnlljvnxtJDCPpbEPppgbiSONGf6zazxRXhixvDAjP6WGV0Fm/YGm+YKq+YS6+QFFvU5lokzLKos
+        08q0cIpknv5iyvwhvGGaesVkesJkfMRouMOor2DQlzHortFrS+g1RfSTBXTqvJBD0tn+Q2f9i9b6hdby
+        gWb6DY35Fc3UM5OmR+EetfEWtaGMWn/DhK7EhLaISlvgfwOk3DSICNo3AAAAAElFTkSuQmCC
+</value>
   </data>
 </root>
