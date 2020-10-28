@@ -47,7 +47,13 @@
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipView = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipAdd = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipExit = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipMax = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipMin = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipDelete = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipUpdate = new System.Windows.Forms.ToolTip(this.components);
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -90,6 +96,7 @@
             this.button3.TabIndex = 6;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
             // 
             // button2
             // 
@@ -102,6 +109,7 @@
             this.button2.TabIndex = 5;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             // 
             // button1
             // 
@@ -114,6 +122,7 @@
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
             // panel3
             // 
@@ -156,7 +165,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
             this.panel5.Controls.Add(this.bunifuImageButton4);
             this.panel5.Controls.Add(this.bunifuImageButton3);
             this.panel5.Controls.Add(this.bunifuImageButton2);
@@ -169,7 +178,7 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.bunifuImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bunifuImageButton1.Image = global::Crud.Properties.Resources.Visualize;
             this.bunifuImageButton1.ImageActive = null;
@@ -180,10 +189,12 @@
             this.bunifuImageButton1.TabIndex = 4;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.bunifuImageButton1.MouseEnter += new System.EventHandler(this.bunifuImageButton1_MouseEnter);
             // 
             // bunifuImageButton2
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.bunifuImageButton2.Image = global::Crud.Properties.Resources.Create;
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.Location = new System.Drawing.Point(0, 101);
@@ -193,10 +204,12 @@
             this.bunifuImageButton2.TabIndex = 5;
             this.bunifuImageButton2.TabStop = false;
             this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            this.bunifuImageButton2.MouseEnter += new System.EventHandler(this.bunifuImageButton2_MouseEnter);
             // 
             // bunifuImageButton3
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.bunifuImageButton3.Image = global::Crud.Properties.Resources.Delete;
             this.bunifuImageButton3.ImageActive = null;
             this.bunifuImageButton3.Location = new System.Drawing.Point(0, 178);
@@ -206,10 +219,11 @@
             this.bunifuImageButton3.TabIndex = 6;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.MouseEnter += new System.EventHandler(this.bunifuImageButton3_MouseEnter);
             // 
             // bunifuImageButton4
             // 
-            this.bunifuImageButton4.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuImageButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.bunifuImageButton4.Image = global::Crud.Properties.Resources.Update;
             this.bunifuImageButton4.ImageActive = null;
             this.bunifuImageButton4.Location = new System.Drawing.Point(0, 255);
@@ -219,6 +233,7 @@
             this.bunifuImageButton4.TabIndex = 7;
             this.bunifuImageButton4.TabStop = false;
             this.bunifuImageButton4.Zoom = 10;
+            this.bunifuImageButton4.MouseEnter += new System.EventHandler(this.bunifuImageButton4_MouseEnter);
             // 
             // label1
             // 
@@ -240,10 +255,40 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Desing By: Maxwell Tavares";
             // 
-            // toolTip1
+            // toolTipView
             // 
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Aqui podras visualizar";
+            this.toolTipView.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipView.ToolTipTitle = "Aqui podras visualizar";
+            // 
+            // toolTipAdd
+            // 
+            this.toolTipAdd.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipAdd.ToolTipTitle = "Aqui podras añadir un nuevo doc.";
+            // 
+            // toolTipExit
+            // 
+            this.toolTipExit.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            this.toolTipExit.ToolTipTitle = "Salir.";
+            // 
+            // toolTipMax
+            // 
+            this.toolTipMax.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipMax.ToolTipTitle = "Maximizar";
+            // 
+            // toolTipMin
+            // 
+            this.toolTipMin.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipMin.ToolTipTitle = "Minimizar";
+            // 
+            // toolTipDelete
+            // 
+            this.toolTipDelete.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipDelete.ToolTipTitle = "Aqui podras eliminar docs.";
+            // 
+            // toolTipUpdate
+            // 
+            this.toolTipUpdate.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipUpdate.ToolTipTitle = "Aqui podras actualizar docs.";
             // 
             // FormMain
             // 
@@ -292,7 +337,13 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTipView;
+        private System.Windows.Forms.ToolTip toolTipAdd;
+        private System.Windows.Forms.ToolTip toolTipExit;
+        private System.Windows.Forms.ToolTip toolTipMax;
+        private System.Windows.Forms.ToolTip toolTipMin;
+        private System.Windows.Forms.ToolTip toolTipDelete;
+        private System.Windows.Forms.ToolTip toolTipUpdate;
     }
 }
 
